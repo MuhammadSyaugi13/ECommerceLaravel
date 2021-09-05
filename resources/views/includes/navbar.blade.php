@@ -16,7 +16,11 @@
                 </a>
 
                 <div class="user-menu dropdown-menu">
-                    <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                    {{-- <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a> --}}
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                      </form>
                 </div>
             </div>
 
